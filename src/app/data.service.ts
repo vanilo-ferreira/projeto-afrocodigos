@@ -30,4 +30,10 @@ export class DataService {
 
     return this.http.put<ResponseUpdateCollaborator>(_url, body);
   }
+
+  deleteCollaborator(id: string): Observable<any>  {
+    const _url = `${this.url}/${id}`;
+
+    return this.http.delete<any>(_url);
+  }
 }
