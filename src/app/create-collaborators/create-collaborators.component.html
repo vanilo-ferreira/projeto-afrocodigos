@@ -2,15 +2,23 @@
 
 <div>
     <label>Nome:
-        <input placeholder="Insira o nome">
+        <input placeholder="Insira o nome" [(ngModel)]="body.name">
     </label>
     <br><br>
 
     <label>Cargo:
-        <input placeholder="Insira o cargo">
+        <input placeholder="Insira o cargo" [(ngModel)]="body.role">
     </label>
     <br><br>
-    <button>Cadastrar</button>
+    <button (click)="save()">Cadastrar</button>
 </div>
 
 <br><br>
+
+<div *ngIf="responseCreateCollaborators">
+    <h3>Colaborador(a) cadatrado(a) com sucesso!</h3>
+    <label>Nome: {{responseCreateCollaborators.name}}</label><br>
+    <label>Profissão: {{responseCreateCollaborators.role}}</label><br>
+    <label>Id: {{responseCreateCollaborators.id}}</label><br>
+    <label>Criado em: {{responseCreateCollaborators.created_at}}</label><br>
+</div>
