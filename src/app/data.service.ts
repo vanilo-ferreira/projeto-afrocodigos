@@ -13,4 +13,8 @@ export class DataService {
   getCollaborators<T>(): Observable<T> {
     return this.http.get<T>(this.url);
   }
+
+  createCollaborators<T>(body: any): Observable<T> {
+    return this.http.post<T>(this.url, body);
+  }
 }
