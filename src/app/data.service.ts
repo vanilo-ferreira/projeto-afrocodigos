@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { RequestUpdate, ResponseCollaborator, ResponseUpdateCollaborator } from './app.model';
 
 @Injectable({
   providedIn: 'root',
@@ -16,5 +17,17 @@ export class DataService {
 
   createCollaborators<T>(body: any): Observable<T> {
     return this.http.post<T>(this.url, body);
+  }
+
+  getCollaborator(id: string): Observable<ResponseCollaborator> {
+    const _url = `${this.url}/${id}`;
+
+    return this.http.get<ResponseCollaborator>(_url);
+  }
+
+  updateCollaborator(id: string, body:RequestUpdate): Observable<ResponseUpdateCollaborator>  {
+    const _url = `${this.url}/${id}`;
+
+    return this.http.put<ResponseUpdateCollaborator>(_url, body);
   }
 }
