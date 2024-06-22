@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ResponseCollaborators } from './app.model';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -11,7 +10,7 @@ export class DataService {
 
   constructor(private http: HttpClient) {}
 
-  getCollaborators(): Observable<any> {
-    return this.http.get<any>(this.url);
+  getCollaborators<T>(): Observable<T> {
+    return this.http.get<T>(this.url);
   }
 }
