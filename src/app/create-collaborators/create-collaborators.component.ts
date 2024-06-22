@@ -1,4 +1,6 @@
+import { ResponseCollaborators } from './../app.model';
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-create-collaborators',
@@ -7,10 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateCollaboratorsComponent implements OnInit{
 
-  constructor(){
+  body: any = {
+    name: "",
+    role: ""
+  };
+
+  responseCreateCollaborators: any;
+
+  constructor(
+    private dataService: DataService
+  ){
     
   }
   ngOnInit(): void {
     
+  }
+
+  save() {
+    this.dataService.createCollaborators(this.body)
+      .subscribe(res => this.responseCreateCollaborators = res)
   }
 }
