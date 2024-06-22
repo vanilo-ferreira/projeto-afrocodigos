@@ -7,15 +7,17 @@ import { CreateCollaboratorsModule } from './create-collaborators/create-collabo
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DataService } from './data.service';
+import { UpdateCollaboratorModule } from './update-collaborator/update-collaborator.module';
 
 @NgModule({
   imports: [
     BrowserModule, 
     AppRoutingModule, 
+    HttpClientModule,
+    FormsModule,
     CollaboratorsModule, 
     CreateCollaboratorsModule,
-    HttpClientModule,
-    FormsModule
+    UpdateCollaboratorModule
   ],
   exports: [],
   declarations: [AppComponent],
