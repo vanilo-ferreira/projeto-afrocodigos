@@ -7,10 +7,10 @@
     <td>Editar</td>
     <td>Remover</td>
   </thead>
-  <tbody>
+  <tbody *ngFor="let collaborator of responseCollaborators.data">
     <tr>
-      <td>Vanilo</td>
-      <td>DEV</td>
+      <td>{{collaborator.name}}</td>
+      <td>{{collaborator.role}}</td>
       <td>
         <a href="">E</a>
       </td>
