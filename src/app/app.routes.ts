@@ -1,8 +1,10 @@
 import { Routes } from '@angular/router';
 import { CollaboratorsComponent } from './collaborators/collaborators.component';
 import { CreateCollaboratorsComponent } from './create-collaborators/create-collaborators.component';
+import { UpdateCollaboratorComponent } from './update-collaborator/update-collaborator.component';
 
 export const routes: Routes = [
   { path: 'collaborators', component: CollaboratorsComponent },
-  { path: 'register', component: CreateCollaboratorsComponent },
+  { path: 'collaborators/register', component: CreateCollaboratorsComponent },
+  { path: 'collaborators/update/:id', component: UpdateCollaboratorComponent },
 ];
