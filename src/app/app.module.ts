@@ -6,6 +6,7 @@ import { CollaboratorsModule } from './collaborators/collaborators.module';
 import { CreateCollaboratorsModule } from './create-collaborators/create-collaborators.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { DataService } from './data.service';
 
 @NgModule({
   imports: [
@@ -18,7 +19,9 @@ import { FormsModule } from '@angular/forms';
   ],
   exports: [],
   declarations: [AppComponent],
-  providers: [],
+  providers: [
+    DataService
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
