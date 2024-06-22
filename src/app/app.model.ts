@@ -14,14 +14,14 @@ export interface RequestUpdate {
   role: string;
 }
 
-export interface ResponseCollaborator{
+export interface ResponseCollaborator {
   id: number;
   created_at: number;
   name: string;
   role: string;
 }
 
-export interface ResponseUpdateCollaborator{
+export interface ResponseUpdateCollaborator {
   id: number;
   created_at: number;
   name: string;
