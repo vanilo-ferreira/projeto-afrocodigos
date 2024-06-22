@@ -1,0 +1,17 @@
+<h1>Atualização de Cadastro</h1>
+
+<div>
+    <label>Nome:
+        <input placeholder="Insira o nome" [(ngModel)]="body.name" >
+    </label>
+    <br><br>
+
+    <label>Cargo:
+        <input placeholder="Insira o cargo" [(ngModel)]="body.role">
+    </label>
+    <br><br>
+    
+    <button (click)="update()">Atualizar</button>
+</div>
+
+<br><br>
