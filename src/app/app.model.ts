@@ -9,6 +9,13 @@ export interface Collaborators {
   role: string;
 }
 
+export interface Collaborator {
+  id: number;
+  created_at: number;
+  name: string;
+  role: string;
+}
+
 export interface RequestUpdate {
   name: string;
   role: string;
