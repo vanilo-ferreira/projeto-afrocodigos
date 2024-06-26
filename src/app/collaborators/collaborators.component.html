@@ -1,22 +1,29 @@
-<h1>Lista de Colaboradores</h1>
+<div class="container-collaborator">
+  <h1>Colaboradores</h1>
 
-<table>
-  <thead>
-    <td>Nome</td>
-    <td>Cargo</td>
-    <td>Editar</td>
-    <td>Remover</td>
-  </thead>
-  <tbody *ngFor="let collaborator of responseCollaborators.data">
-    <tr>
-      <td>{{collaborator.name}}</td>
-      <td>{{collaborator.role}}</td>
-      <td>
-        <a routerLink="/collaborators/update/{{collaborator.id}}">E</a>
-      </td>
-      <td>
-        <a routerLink="/collaborators/delete/{{collaborator.id}}">R</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <thead>
+      <td></td>
+      <td>Nome</td>
+      <td>Cargo</td>
+      <td>Editar</td>
+      <td>Remover</td>
+    </thead>
+    <tbody *ngFor="let collaborator of responseCollaborators.data; let position = index">
+      <tr class="linhas-tabela">
+        <td>{{position + 1}}</td>
+        <td class="linhas-dados">{{collaborator.name}}</td>
+        <td class="linhas-dados">{{collaborator.role}}</td>
+        <td class="coluna-icon">
+          <a routerLink="/collaborators/update/{{collaborator.id}}"><mat-icon id="edit-icon"
+              class="icon">edit</mat-icon></a>
+        </td>
+        <td class="coluna-icon">
+          <a routerLink="/collaborators/delete/{{collaborator.id}}"><mat-icon id="delete-icon"
+              class="icon">delete</mat-icon></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
