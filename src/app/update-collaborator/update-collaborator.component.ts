@@ -36,7 +36,7 @@ export class UpdateCollaboratorComponent implements OnInit{
   update() {
     this.dataService.updateCollaborator(this.id, this.body)
     .subscribe(res=> {
-      alert(`Atualizado: ${res.created_at}, Nome: ${res.name}, Cargo: ${res.role}`);
+      alert(`Cadastro Atualizado com sucesso!!!\n\nNome: ${res.name}\nCargo: ${res.role}`);
     })
   }
 }
