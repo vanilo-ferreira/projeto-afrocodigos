@@ -1,4 +1,3 @@
-import { ResponseCollaborators } from './../app.model';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 
@@ -14,13 +13,7 @@ export class CreateCollaboratorsComponent implements OnInit {
     role: ""
   };
 
-  date: any;
-
   responseCreateCollaborators: any;
-
-  if(responseCreateCollaborators) {
-    this.date = this.responseCreateCollaborators.created_at
-  }
 
   constructor(
     private dataService: DataService
