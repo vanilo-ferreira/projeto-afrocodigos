@@ -1,17 +1,41 @@
-<h1>Atualização de Cadastro</h1>
+<div class="container-update-collaborator">
+    <!-- <h1>Atualização de Cadastro</h1>
 
-<div>
-    <label>Nome:
-        <input placeholder="Insira o nome" [(ngModel)]="body.name" >
-    </label>
-    <br><br>
+    <div>
+        <label>Nome:
+            <input placeholder="Insira o nome" [(ngModel)]="body.name">
+        </label>
+        <br><br>
 
-    <label>Cargo:
-        <input placeholder="Insira o cargo" [(ngModel)]="body.role">
-    </label>
-    <br><br>
-    
-    <button (click)="update()">Atualizar</button>
+        <label>Cargo:
+            <input placeholder="Insira o cargo" [(ngModel)]="body.role">
+        </label>
+        <br><br>
+
+        <button (click)="update()">Atualizar</button>
+    </div>
+
+    <br><br> -->
+
+
+    <div class="container-form">
+        <h1 class="titulo-update-collaborator">Atualização de Cadastro</h1>
+
+        <div class="formulario">
+            <div class="box-form">
+                <div>
+                    <label class="campo-form">Nome:
+                        <input placeholder="Insira o nome" required [(ngModel)]="body.name">
+                    </label>
+                </div>
+
+                <div>
+                    <label class="campo-form">Cargo:
+                        <input placeholder="Insira o cargo" required [(ngModel)]="body.role">
+                    </label>
+                </div>
+            </div>
+            <button (click)="update()">Atualizar</button>
+        </div>
+    </div>
 </div>
-
-<br><br>
