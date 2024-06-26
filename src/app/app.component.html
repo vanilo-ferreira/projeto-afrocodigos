@@ -1,9 +1,10 @@
-<nav>
-  <ul>  
-    <li><a routerLink="/collaborators">Lista de colaboradores</a></li>
-    <li><a routerLink="/collaborators/register">Cadastrar colaborador</a></li>
-  </ul>
-</nav>
+<div class="container">
+  <h1  class="titulo">AfroCódigos</h1>
+  <nav class="menu">
+    <button (click)="register()">Cadastrar Colaborador</button>
+    <button (click)="list()">Listar Colaboradores</button>
+  </nav>
+</div>
 
 <div>
   <router-outlet></router-outlet>
