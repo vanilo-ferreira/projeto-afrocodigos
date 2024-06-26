@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CollaboratorsComponent } from './collaborators.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { MatIconModule } from '@angular/material/icon'
 
 
 
@@ -9,7 +10,8 @@ import { AppRoutingModule } from '../app-routing.module';
   declarations: [CollaboratorsComponent],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule
   ],
   exports: [CollaboratorsComponent]
 })
