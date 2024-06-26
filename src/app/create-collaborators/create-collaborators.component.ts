@@ -7,22 +7,28 @@ import { DataService } from '../data.service';
   templateUrl: './create-collaborators.component.html',
   styleUrl: './create-collaborators.component.css'
 })
-export class CreateCollaboratorsComponent implements OnInit{
+export class CreateCollaboratorsComponent implements OnInit {
 
   body: any = {
     name: "",
     role: ""
   };
 
+  date: any;
+
   responseCreateCollaborators: any;
+
+  if(responseCreateCollaborators) {
+    this.date = this.responseCreateCollaborators.created_at
+  }
 
   constructor(
     private dataService: DataService
-  ){
-    
+  ) {
+
   }
   ngOnInit(): void {
-    
+
   }
 
   save() {

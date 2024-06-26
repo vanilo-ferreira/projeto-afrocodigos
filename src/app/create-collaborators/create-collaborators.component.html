@@ -1,24 +1,33 @@
-<h1>Cadastrar Colaborador</h1>
+<div class="container-create-collaborator">
+    <div class="container-form">
+        <h1 class="titulo-create-collaborator">Cadastrar Colaborador</h1>
 
-<div>
-    <label>Nome:
-        <input placeholder="Insira o nome" [(ngModel)]="body.name">
-    </label>
-    <br><br>
+        <div class="formulario">
+            <div class="box-form">
+                <div>
+                    <label class="campo-form">Nome:
+                        <input placeholder="Insira o nome" required [(ngModel)]="body.name">
+                    </label>
+                </div>
 
-    <label>Cargo:
-        <input placeholder="Insira o cargo" [(ngModel)]="body.role">
-    </label>
-    <br><br>
-    <button (click)="save()">Cadastrar</button>
-</div>
+                <div>
+                    <label class="campo-form">Cargo:
+                        <input placeholder="Insira o cargo" required [(ngModel)]="body.role">
+                    </label>
+                </div>
+            </div>
+            <button (click)="save()">Cadastrar</button>
+        </div>
+    </div>
 
-<br><br>
-
-<div *ngIf="responseCreateCollaborators">
-    <h3>Colaborador(a) cadatrado(a) com sucesso!</h3>
-    <label>Nome: {{responseCreateCollaborators.name}}</label><br>
-    <label>Profissão: {{responseCreateCollaborators.role}}</label><br>
-    <label>Id: {{responseCreateCollaborators.id}}</label><br>
-    <label>Criado em: {{responseCreateCollaborators.created_at}}</label><br>
+    <div class="container-sucess" *ngIf="responseCreateCollaborators">
+        <h3>Cadastrado com sucesso!</h3>
+        <div class="card">
+            <div class="cardText">
+                <label>Nome: <span>{{responseCreateCollaborators.name}}</span></label><br>
+                <label>Cargo: <span>{{responseCreateCollaborators.role}}</span> </label><br>
+                <label>Id: <span>{{responseCreateCollaborators.id}}</span></label><br>
+            </div>
+        </div>
+    </div>
 </div>

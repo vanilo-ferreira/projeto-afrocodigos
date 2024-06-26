@@ -1,0 +1,102 @@
+.container-create-collaborator,
+.container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.container-sucess,
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-create-collaborator {
+    margin-bottom: 30px;
+}
+
+.box-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+}
+
+.box-form div {
+    padding: 20px 0;
+}
+
+.formulario {
+    width: 400px;
+    height: auto;
+    padding: 40px;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+.formulario:hover {
+    border: 2px solid green;
+}
+
+.formulario input {
+    width: 200px;
+    height: 50px;
+    padding-left: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.campo-form {
+    padding: 30px 0;
+}
+
+.formulario button {
+    font-size: 16px;
+    border: solid 1px black;
+    height: 40px;
+    width: 200px;
+    font-weight: bold;
+}
+
+.formulario button:hover {
+    border: solid 1px aquamarine;
+    background-color: green;
+    color: white;
+}
+
+.card {
+    width: 350px;
+    margin: 40px;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardText {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardText span {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container-sucess h3 {
+    background-color: aqua;
+    border: solid 2px black;
+    padding: 10px 20px;
+    color: black;
+}
