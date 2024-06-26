@@ -12,8 +12,6 @@ export class UpdateCollaboratorComponent implements OnInit{
 
   id: string;
 
-  teste = "sasas";
-
   body: RequestUpdate;
 
   constructor(
