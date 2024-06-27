@@ -38,12 +38,12 @@
     width: 400px;
     height: auto;
     padding: 40px;
-    border: 2px solid blue;
+    border: 2px solid aqua;
     border-radius: 5px;
 }
 
 .formulario:hover {
-    border: 2px solid green;
+    border: 2px solid rgb(0, 0, 175);
 }
 
 .formulario input {
