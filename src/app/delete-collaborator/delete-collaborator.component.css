@@ -1,0 +1,79 @@
+.container-delete-collaborator  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.container-delete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-delete-collaborator {
+    margin-bottom: 30px;
+    color: rgb(250, 21, 21)
+}
+
+.box-button{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.box-button button {
+    font-size: 16px;
+    border: solid 1px black;
+    height: 40px;
+    width: 200px;
+    font-weight: bold;
+}
+
+#btn-delete {
+    background-color: rgb(250, 134, 134);
+}
+
+#btn-cancel {
+    background-color: rgb(126, 238, 122);
+}
+
+#btn-delete:hover {
+    background-color: rgb(250, 21, 21);
+    color: white;
+}
+
+#btn-cancel:hover {
+    background-color: rgb(10, 252, 2);
+    color: white;
+}
+
+.card {
+    width: 450px;
+    margin: 40px;
+    border: 2px solid rgb(250, 134, 134);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.card:hover{
+    border: 2px solid rgb(250, 21, 21);
+}
+
+.cardText {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardText span {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}

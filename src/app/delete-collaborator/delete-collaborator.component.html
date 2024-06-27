@@ -1,17 +1,18 @@
-<h2>Você deseja remover este colaborador?</h2>
+<div class="container-delete-collaborator">
 
-<div>
-
-    <label>Id: <strong>{{collaborator.id}}</strong> </label>
-    <br><br>
-
-    <label>Nome: <strong>{{collaborator.name}}</strong> </label>
-    <br><br>
-
-    <label>Cargo: <strong>{{collaborator.role}}</strong> </label>
-    <br><br>
-
-    <button (click)="delete()">Confirmar?</button>
-    <button (click)="cancel()">Cancelar</button>
+    <div class="container-delete">
+        <h1 class="titulo-delete-collaborator">Você deseja remover este colaborador?</h1>
+        <div class="card">
+            <div class="cardText">
+                <label>Id: <span>{{collaborator.id}}</span></label><br>
+                <label>Nome: <span>{{collaborator.name}}</span></label><br>
+                <label>Cargo: <span>{{collaborator.role}}</span> </label><br>
+            </div>
+            <div class="box-button">
+                <button id="btn-delete" (click)="delete()">Confirmar?</button>
+                <button id="btn-cancel" (click)="cancel()">Cancelar</button>
+            </div>
+        </div>
+    </div>
 
 </div>

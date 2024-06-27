@@ -32,7 +32,7 @@ export class DeleteCollaboratorComponent implements OnInit{
   delete() {
     this.dataService.deleteCollaborator(this.id)
       .subscribe(res => {
-        alert(`Removido com sucesso!`);
+        alert(`Colaborador removido com sucesso!`);
         this._route.navigate(['/collaborators']);
       });
   }
