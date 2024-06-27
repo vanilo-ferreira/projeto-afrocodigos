@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { RequestUpdate } from '../app.model';
 
 @Component({
@@ -16,7 +16,8 @@ export class UpdateCollaboratorComponent implements OnInit{
 
   constructor(
     private dataService: DataService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private _route: Router
   ) {}
 
   ngOnInit(): void {
@@ -35,6 +36,7 @@ export class UpdateCollaboratorComponent implements OnInit{
     this.dataService.updateCollaborator(this.id, this.body)
     .subscribe(res=> {
       alert(`Cadastro Atualizado com sucesso!!!\n\nNome: ${res.name}\nCargo: ${res.role}`);
+      this._route.navigate(['/collaborators']);
     })
   }
 }
