@@ -17,6 +17,7 @@
 
 .titulo-create-collaborator {
     margin-bottom: 30px;
+    color: green;
 }
 
 .box-form {
@@ -37,7 +38,7 @@
     width: 400px;
     height: auto;
     padding: 40px;
-    border: 2px solid blue;
+    border: 2px solid aquamarine;
     border-radius: 5px;
 }
 
